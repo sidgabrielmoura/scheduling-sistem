@@ -1,0 +1,131 @@
+.search{
+    position: relative;
+    width: 45vw;
+    height: 10vh;
+    background-color: rgb(168, 168, 168);
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 5px;
+}
+.search input::placeholder{
+    text-align: center;
+    font-size: 15px;
+    
+}
+.search input{
+    width: 80%;
+    height: 20px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+}
+.search input:hover{
+    border: 1.5px solid #167f0e;
+}
+.search i{
+    font-size: 19px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+.people-window-views{
+    text-align: center;
+    padding: 20px;
+    width: 40vw;
+    background-color: rgb(168, 168, 168);
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: .3s;
+    cursor: pointer;
+    
+}
+.people-window-views:hover{
+    padding: 40px 0;
+}
+.people-window-views h3{
+    text-transform: capitalize;
+    font-weight: 600;
+}
+#fade{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+#modal{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: aliceblue;
+    padding: 20px 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    width: 50vw;
+    min-height: 100px;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #ad1818;
+    opacity: .8;
+    color: aliceblue;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.header button:hover{
+    opacity: 1;
+}
+#modal,
+#fade{
+    transition: .2s;
+    opacity: 1;
+    pointer-events: all;
+}
+.modal-body{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.modal-body input{
+    width: 50%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #727171;
+    outline: none;
+    font-size: 18px;
+}
+.modal-body #confirm-the-name{
+    padding: 2px 5px;
+    width: 10rem;
+    border-radius: 5px;
+    background-color: #089c08;
+    opacity: .8;
+    color: aliceblue;
+    cursor: pointer;
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+.modal-body #confirm-the-name:hover{
+    opacity: 1;
+}
+#modal.hide,
+#fade.hide{
+    opacity: 0;
+    pointer-events: none;
+}
+#modal.hide{
+    top: 0;
+}

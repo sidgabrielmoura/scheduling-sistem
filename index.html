@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search sistem</title>
+    <link rel="stylesheet" href="style-main.css">
+    <link rel="stylesheet" href="style-secondary.css">
+    <script src="main.js" defer></script>    
+    <script src="functions.js" defer></script>
+    <script src="objects.js" defer></script>  
+    <script src="variaveis.js" defer></script> 
+</head>
+<body>
+    <main>
+        <section class="search">
+            <i class="fa-solid fa-plus" id="plus" style="color: #000000;"></i>
+            <input type="search" name="search" id="search-people" placeholder="who you search?">
+            <i class="fa-regular fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+        </section>
+        <section class="modal">
+            <div id="fade" class="hide"></div>
+            <div id="modal" class="hide">
+                <div class="header">
+                    <h2>what is the name of the new person?</h2>
+                    <button id="close-modal">close</button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" name="#" id="name-of-the-new-person">
+                    <input type="submit" value="confirm" id="confirm-the-name" onclick="confirma()">
+                </div>
+            </div>
+            <div id="modal-person-informations">
+                
+            </div>
+        </section>
+    </main> 
+</body>
+</html>
+<!--<i class="fa-solid fa-user-slash" style="color: #000000;"></i>-->
