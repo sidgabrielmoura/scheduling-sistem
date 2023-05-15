@@ -71,6 +71,42 @@
     width: 50vw;
     min-height: 100px;
 }
+#modal-person-informations{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: rgb(206, 206, 206);
+    padding: 40px 20px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    width: 30vw;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#modal-person-informations input{
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+}
+#modal-person-informations button{
+    margin-top: 10px;
+    padding: 8px 0;
+    border-radius: 5px;
+    background-color: #089c08;
+    color: aliceblue;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+#modal-person-informations button:hover{
+    background-color:#025a02;
+} 
 .header{
     display: flex;
     justify-content: space-around;
@@ -89,7 +125,8 @@
     opacity: 1;
 }
 #modal,
-#fade{
+#fade,
+#modal-person-informations{
     transition: .2s;
     opacity: 1;
     pointer-events: all;
@@ -122,10 +159,12 @@
     opacity: 1;
 }
 #modal.hide,
-#fade.hide{
+#fade.hide,
+#modal-person-informations.hide{
     opacity: 0;
     pointer-events: none;
 }
-#modal.hide{
+#modal.hide,
+#modal-person-informations.hide{
     top: 0;
 }

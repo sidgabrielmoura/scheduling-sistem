@@ -15,13 +15,21 @@ function confirma() {
     let valor = newPerson.value
 
     if(valor != ""){
+
         let novaPessoa = document.createElement("h3")
         let texto  = document.createTextNode(valor)
         novaPessoa.appendChild(texto)
         novaPessoa.classList.add("people-window-views")
-
         htmlMain.appendChild(novaPessoa)
+
     }else{
         alert("talvez você tenha esquecido o nome! confere aí.")
     }  
 }
+
+
+//fazer o evento de click na "nova pessoa".depois, fazer a implementaçao da label que será preenchida as informações pessoais do 
+//usuário 
+
+
+        
